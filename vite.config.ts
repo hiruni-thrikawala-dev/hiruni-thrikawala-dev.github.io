@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-   base: mode === 'production' ? '/portfolio/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/myportfolio/' : '/',
 }));
